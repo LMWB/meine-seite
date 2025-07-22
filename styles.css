@@ -60,6 +60,36 @@ footer {
   color: #007acc;
 }
 
+/* --- Burger Button --- */
+.burger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+/* --- Mobile Menü --- */
+@media (max-width: 600px) {
+  .burger {
+    display: block;
+  }
+
+  .nav {
+    flex-direction: column;
+    display: none;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+}
+
+
 /* --- Mobilfreundliches Design ab hier --- */
 @media (max-width: 600px) {
   body {
