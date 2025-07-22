@@ -60,3 +60,25 @@ footer {
   color: #007acc;
 }
 
+/* --- Mobilfreundliches Design ab hier --- */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 0 1rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .profilbild {
+    width: 120px;
+  }
+
+  header, main, footer {
+    width: 100%;
+  }
+}
+
