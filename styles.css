@@ -10,11 +10,28 @@ body {
   min-height: 100vh;
 }
 
-header, main, footer {
+header{
   max-width: 600px;
   width: 90%;
   margin-top: 2rem;
   text-align: center;
+}
+
+main{
+  max-width: 600px;
+  width: 90%;
+  margin-top: 2rem;
+}
+
+footer {
+  max-width: 600px;
+  width: 90%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.list {
+  width: 100%;
 }
 
 .profilbild {
