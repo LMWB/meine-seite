@@ -1,8 +1,15 @@
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --link-color: #007acc;
+  --nav-hover-color: #007acc;
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  background: var(--bg-color);
   color: #333;
   display: flex;
   flex-direction: column;
@@ -61,7 +68,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  background-color: #fff;
+  background-color: var(--bg-color);
   padding: 1rem 0;
   margin: 0;
   border-bottom: 1px solid #ddd;
@@ -89,6 +96,16 @@ footer {
 
 /* --- Mobile Menü --- */
 @media (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+    padding: 0 1rem;
+  }
+
+  header, main, footer {
+    width: 100%;
+  }
+  
   .burger {
     display: block;
   }
@@ -96,36 +113,18 @@ footer {
   .nav {
     flex-direction: column;
     display: none;
-    background-color: #fff;
+    background-color: var(--bg-color);
     border-top: 1px solid #ccc;
     padding: 1rem 0;
+    gap: 0.5rem;
   }
 
   .nav.show {
     display: flex;
   }
-}
-
-
-/* --- Mobilfreundliches Design ab hier --- */
-@media (max-width: 600px) {
-  body {
-    font-size: 16px;
-    padding: 0 1rem;
-  }
-
-  .nav {
-    flex-direction: column;
-    gap: 0.5rem;
-    padding: 1rem;
-  }
 
   .profilbild {
     width: 120px;
-  }
-
-  header, main, footer {
-    width: 100%;
   }
 }
 
